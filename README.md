@@ -3,7 +3,7 @@ Switch on or off the fan connected to the RaspberryPi depending of the temperatu
 
 ## Fan controller code
 
-Move the script _fancontroller.py_ to */usr/local/bin/*
+Move the script _fancontroller.py_ to **/usr/local/bin/**
 ```
 sudo mv fancontroller.py /usr/local/bin/
 ```
@@ -15,7 +15,7 @@ sudo chmod +x /usr/local/bin/fancontroller.py
 
 ## Execute the fan controller code on boot
 
-Move the script _fancontroller.sh_ to */etc/init.d*
+Move the script _fancontroller.sh_ to **/etc/init.d**
 ```
 sudo mv fancontroller.sh /etc/init.d/
 ```
