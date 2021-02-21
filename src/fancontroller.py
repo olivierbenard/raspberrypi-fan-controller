@@ -1,10 +1,9 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
-# to be moved to /usr/local/bin
-# sudo chmod +x /usr/local/bin/fancontroller.py
 
+import time
 import vcgencmd
 from gpiozero import OutputDevice
-
 
 # IMPORTANT: maximum temperature is 85°C and cpu throttled at 80°C
 
@@ -12,6 +11,7 @@ ON_THRESHOLD = 70 # (degrees Celsius) fan starts at this temperature
 OFF_THRESHOLD = 60 # (degrees Celsius) fan shuts down at this temperature
 SLEEP_INTERVAL = 5 # (seconds) how often the core temperature is checked
 GPIO_PIN = 18 # (number) which GPIO pin is used to control the fan
+
 
 def main():
 
