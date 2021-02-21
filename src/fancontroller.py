@@ -3,7 +3,7 @@
 # sudo chmod +x /usr/local/bin/fancontroller.py
 
 import vcgencmd
-from gpiozero import OutpuDevice
+from gpiozero import OutputDevice
 
 
 # IMPORTANT: maximum temperature is 85°C and cpu throttled at 80°C
@@ -16,7 +16,7 @@ GPIO_PIN = 18 # (number) which GPIO pin is used to control the fan
 def main():
 
     vc = vcgencmd.Vcgencmd()
-    fan = OutpuDevice(GPIO_PIN)
+    fan = OutputDevice(GPIO_PIN)
 
     while True:
         temperature = int(vc.measure_temp())
